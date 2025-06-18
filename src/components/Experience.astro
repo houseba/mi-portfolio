@@ -1,0 +1,22 @@
+---
+import ExperienceItem from './ExperienceItem.astro';
+
+const EXPERIENCE = [
+    {
+        date: 'Agosto 2023 - Presente',
+        title: 'Soporte Informático | Unidad Informática UTFSM Viña del Mar',
+        description: 'Parte del equipo responsable de brindar soporte técnico a profesores y personal de la universidad Técnico Federico Santa María, resolviendo problemas relacionados con hardware y software.',
+    }
+]
+---
+
+
+<ol class="relative border-s">
+    {EXPERIENCE.map((experience) => (
+        <li class="mb-10 ms-4">
+            <ExperienceItem {...experience} />
+        </li>
+    ))
+    }
+</ol>
+

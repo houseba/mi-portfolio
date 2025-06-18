@@ -1,0 +1,74 @@
+---
+import Badge from '../components/Badge.astro';
+import Layout from '../layouts/Layout.astro';
+import LinkedInIcon from '../components/Icons/LinkedInIcon.astro';
+import GitHubIcon from '../components/Icons/GitHubIcon.astro';
+import SocialPill from '../components/SocialPill.astro';
+import Experience from '../components/Experience.astro';
+import SectionContainer from '../components/SectionContainer.astro';
+---
+
+<Layout title="Portfolio Sebastián Villalobos - software developer"
+    description='Portfolio de Sebastián Villalobos, estudiante de Técnico Universitario en Informática en la Universidad Técnica Federico Santa María. Aquí encontrarás mi información relevante como desarrollador de software.'>
+    
+    <main id="inicio">
+        <SectionContainer>
+             <h1 class="text-white text-3xl md:text-4xl font-bold flex flex-row gap-x-4 pb-10 lg:text-5xl">Sebastián Villalobos
+                <a class="justify-center items-center flex" href="https://www.linkedin.com/in/sebastián-villalobos-rojas-13634b182/"><Badge>Disponible</Badge></a>
+            </h1>
+        <h2 class="text-xl max-w-[700px] lg:text-2xl">
+            <span class="opacity-90">Estudiante de último año de </span><span class="font-bold" style="color: #c9a34d;">Técnico universitario en informática</span> 
+            <span class="opacity-90">en la</span> 
+            <strong>Universidad Técnica Federico Santa María</strong><span class="opacity-90"> en búsqueda activa de oportunidades de práctica profesional. <br />
+            Manejo lenguajes de programación como</span> <strong>Java, Python y Visual Basic</strong><span class="opacity-90">, además de bases de datos SQL y desarrollo backend.
+        </h2>     
+
+       <nav class="flex gap-x-5 mt-10 flex-wrap justify-center">
+           <SocialPill href="https://www.linkedin.com/in/sebastián-villalobos-rojas-13634b182/">
+               <LinkedInIcon class="size-6" />
+               LinkedIn
+           </SocialPill>
+           <SocialPill href="https://github.com/houseba/">
+                <GitHubIcon class="size-6" />
+                GitHub
+           </SocialPill>
+        </nav>
+        </SectionContainer>
+
+        <SectionContainer id="experiencia">
+            <h2 class="text-4xl mt-20 font-semibold">Experiencia</h2>
+            <Experience />
+        </SectionContainer>
+
+        <SectionContainer id="proyectos">
+            <h2 class="text-4xl mt-20 font-semibold">Proyectos</h2>
+            <p class="text-gray-400 mt-4">Pronto...</p>
+        </SectionContainer>
+
+        <SectionContainer id="contacto">
+            <h2 class="text-4xl mt-20 font-semibold">Contacto</h2>
+            <p class="text-gray-400 mt-4">Si deseas ponerte en contacto conmigo, no dudes en hacerlo a través de los siguientes medios:</p>
+            
+            <div class="mt-6 rounded-xl p-6 flex flex-col gap-4 shadow-lg max-w-md mx-auto backdrop-blur-md" style="background: #36060a;">
+                <div class="flex items-center gap-3">
+                    <svg class="w-6 h-6" style="color: #c9a34d;" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                    <rect width="20" height="14" x="2" y="5" rx="2" ry="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <polyline points="2,5 12,13 22,5" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                    <a href="mailto:sebastianvillalobos321@gmail.com" class="text-gray-200 hover:text-[#c9a34d] transition-colors break-all">
+                    sebastianvillalobos321@gmail.com
+                    </a>
+                </div>
+                
+                <div class="flex items-center gap-3">
+                    <svg class="w-6 h-6" style="color: #c9a34d;" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M3 5.75A2.75 2.75 0 015.75 3h12.5A2.75 2.75 0 0121 5.75v12.5A2.75 2.75 0 0118.25 21H5.75A2.75 2.75 0 013 18.25V5.75zm3.5 0a.75.75 0 00-.75.75v12.5c0 .414.336.75.75.75h12.5a.75.75 0 00.75-.75V6.5a.75.75 0 00-.75-.75H6.5zm2.25 2.25a.75.75 0 01.75-.75h4a.75.75 0 01.75.75v1.5a.75.75 0 01-.75.75h-4a.75.75 0 01-.75-.75v-1.5z" />
+                    </svg>
+                    <a href="tel:+56957396778" class="text-gray-200 hover:text-[#c9a34d] transition-colors">
+                    +56 9 5739 6778
+                    </a>
+                </div>
+            </div>
+        </SectionContainer>
+    </main>
+</Layout>
